@@ -1,8 +1,7 @@
+require('chromedriver');
 const assert = require('assert');
 const { Given, When, Then, setDefaultTimeout, After, AfterAll, Before } = require('cucumber');
 var webdriver = require('selenium-webdriver');
-var test = require('selenium-webdriver/testing');
-var fs = require('fs');
 
 const { By } = require('selenium-webdriver');
 
