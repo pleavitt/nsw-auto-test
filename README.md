@@ -16,5 +16,5 @@ to generate and display the html report:
 ## Known bugs
 - None
 
-Todo:
+## Todo
 - Move browser open and closing from Before and After hooks within step definition into hooks.js file
