@@ -1,0 +1,18 @@
+{
+  "name": "nsw-auto-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "cucumber-js -f json:test/report/cucumber_report.json"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chromedriver": "^2.41.0",
+    "selenium-webdriver": "^3.6.0",
+    "cucumber": "^4.2.1",
+    "cucumber-html-reporter": "^4.0.4"
+  }
+}
