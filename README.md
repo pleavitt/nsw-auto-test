@@ -9,6 +9,7 @@ Requirements
 
 To run the tests and generate json output:
 * npm install
+* npm test
 
 to generate and display the html report:
 * node report.js

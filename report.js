@@ -8,6 +8,7 @@ var options = {
         storeScreenshots: true,
         reportSuiteAsScenarios: true,
         launchReport: true,
+        theme: 'bootstrap',
         metadata: {
             "App Version":"0.3.2",
             "Test Environment": "STAGING",

@@ -14,24 +14,30 @@ Before( function() {
 });
 
 Given(/^navigate to the homepage$/, async function() {
-    await driver.sleep(3000);
+    await driver.sleep(2000);
     return driver.get("https://transportnsw.info/trip");
 });
 
 When(/^enter the text "([^"]*)" into the "([^"]*)" field$/, async function (input, field) {
-    await driver.sleep(3000);
-    return driver.findElement({ id: "search-input-" + field }).sendKeys(input);
+    await driver.sleep(2000);
+    return driver.findElement({ id: "tni" + field + "TripLocation" }).sendKeys(input);
 });
 
 Then(/^click the "([^"]*)" button$/, async function (button) {
-    await driver.sleep(3000);
+    await driver.sleep(2000);
     return driver.findElement(By.xpath('//button[text() = "' + button + '"]')).click();
 
 });
 
+When(/^press the enter button$/, async function () {
+    await driver.sleep(2000);
+    return driver.findElement({ id: "tniFromTripLocation" }).sendKeys(webdriver.Key.ENTER);
+});
+
+
 Then(/^should see "([^"]*)" or more trips displayed$/, async function (number) {
-    await driver.sleep(3000);
-    let results = await driver.findElements({ className: "tripResults" });
+    await driver.sleep(2000);
+    let results = await driver.findElements({ className: "collapsible-card-details-header" });
     return assert.ok(results.length >= number);
     
 });
