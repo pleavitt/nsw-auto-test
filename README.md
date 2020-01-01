@@ -1,6 +1,6 @@
 ﻿# nsw-auto-test
 
-This test suite is for a prospective employer.  It runs automated e2e tests using CucumberJS and the Selenium driver.
+This test suite  runs automated e2e tests using CucumberJS and the Selenium driver.
 
 ## Installation
 
